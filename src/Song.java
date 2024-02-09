@@ -1,14 +1,13 @@
 
-import java.util.ArrayList;
+import java.util.arrayList;
 public class Song {
     private String title;
     private String artist;
-    private ArrayList <String> listeners;
+    private ArrayList<String> listeners = new ArrayList<>();
 
-    public Song (String title, String artist){
-        this.title = title;
-        this.artist = artist;
-        this.listeners = new ArrayList<>();
+    public Song (String a, String b){
+        title = a;
+        artist = b;
     }
 
     public String getTitle(){
@@ -18,14 +17,16 @@ public class Song {
         return artist;
     }
 
-    public int howMany(ArrayList<String> newListeners){
-        int newCount = 0;
+    public int howMany(ArrayList <String> listeners){
+        int count = 0;
+        String[] array = new String[];
+        for(int i = 0; i<)
         for(String listener: newListeners) {
             if (!listener.contains(newListeners.toLowerCase())) {
                 listeners.add(listener.toLowerCase());
-                newCount++;
+                count++;
             }
         }
-        return newCount;
+        return count;
     }
 }
