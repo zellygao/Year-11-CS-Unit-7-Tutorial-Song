@@ -1,5 +1,5 @@
 
-import java.util.arrayList;
+import java.util.ArrayList;
 public class Song {
     private String title;
     private String artist;
@@ -19,11 +19,9 @@ public class Song {
 
     public int howMany(ArrayList <String> listeners){
         int count = 0;
-        String[] array = new String[];
-        for(int i = 0; i<)
-        for(String listener: newListeners) {
-            if (!listener.contains(newListeners.toLowerCase())) {
-                listeners.add(listener.toLowerCase());
+        for(String listener: listeners){
+            if(!listener.contains(listeners.toLowerCase())){
+                listeners.add(listener.tolowerCase());
                 count++;
             }
         }
